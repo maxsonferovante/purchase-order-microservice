@@ -8,7 +8,7 @@ class OrderRepositoryInterface(ABC):
         raise NotImplementedError
     
     @abstractmethod
-    def get_order(self, order_id: str) -> Order:
+    def get_order_by_id(self, order_id: str) -> Order:
         raise NotImplementedError
     
     @abstractmethod
