@@ -1,6 +1,6 @@
 import pytest
 
-from connection import MongoConnectionHandler
+from purchase_order_microservice.infra.database.mongo.settings.connection import MongoConnectionHandler
 
 class TestMongoConnectionHandler:
     def test_instance(self):
@@ -12,7 +12,11 @@ class TestMongoConnectionHandler:
         client = mongo_connection_handler.get_client()
         assert client is not None
         
-                
+    def test_get_db_connection(self):
+        mongo_connection_handler = MongoConnectionHandler()
+        db_connection = mongo_connection_handler.get_db_connection()
+        assert db_connection is not None
+                        
     def test_context_manager(self):
         with MongoConnectionHandler() as mongo_connection_handler:
             client = mongo_connection_handler.get_client()
