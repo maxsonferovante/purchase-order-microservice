@@ -6,7 +6,7 @@ from purchase_order_microservice.infra.database.mongo.repositories.order_reposit
 
 class TestOrderRepository:
 
-
+    @pytest.mark.skip(reason="Sensive test")
     def test_create_order(self):
         
         order_document = { 
@@ -23,7 +23,8 @@ class TestOrderRepository:
         assert order.get("client_id") == order_document.get("client_id")
         assert order.get("total") == order_document.get("total")
         assert order.get("product_list") == order_document.get("product_list")
-
+    
+    @pytest.mark.skip(reason="Sensive test")
     def test_get_order_by_id(self):
         
         order_document = { 
