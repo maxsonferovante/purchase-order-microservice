@@ -9,8 +9,9 @@ readme = "README.md"
 python = "^3.12"
 pydantic = "^2.8.2"
 fastapi = "^0.112.1"
-sqlalchemy = "^2.0.32"
 pymongo = "^4.8.0"
+pytest = "^8.3.2"
+python-dotenv = "^1.0.1"
 
 
 [build-system]

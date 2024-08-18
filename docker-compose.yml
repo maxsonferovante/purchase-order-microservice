@@ -1,8 +1,7 @@
-version: "3.9"
-
 services:
   mongodb:
-    image: mongo
+    container_name: mongodb-purchase-order-ms
+    image: mongodb/mongodb-community-server:latest
     ports:
       - 27017:27017
     environment:
