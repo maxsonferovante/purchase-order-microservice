@@ -12,6 +12,7 @@ fastapi = "^0.112.1"
 pymongo = "^4.8.0"
 pytest = "^8.3.2"
 python-dotenv = "^1.0.1"
+ruff = "^0.6.5"
 
 
 [build-system]
