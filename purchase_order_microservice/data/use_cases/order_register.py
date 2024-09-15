@@ -13,12 +13,12 @@ class OrderRegisterUseCase(OrderRegisterInterface):
         return self.__format_response(order_result)    
     
     @staticmethod
-    def __register_order(order: Order):
-        return self.repository.create_order(order)
+    def __register_order(cls, order: Order):
+        return cls.repository.create_order(order)
     
     @staticmethod
     def __format_response(order: Order):
-        response = {
+        return {
             'type': 'Orders',
             'count': 1,
             'atributes': order.to_dict()

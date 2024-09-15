@@ -18,9 +18,5 @@ class OrderRegisterUseCase(OrderRegisterInterface):
     
     @staticmethod
     def __format_response(order: Order):
-        response = {
-            'type': 'Orders',
-            'count': 1,
-            'atributes': order.to_dict()
-        }
+        return { 'type': 'Orders', 'count': 1,'atributes': order.to_dict() }
         
