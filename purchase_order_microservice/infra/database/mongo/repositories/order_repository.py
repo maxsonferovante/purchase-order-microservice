@@ -1,5 +1,4 @@
 from bson.objectid import ObjectId
-from typing import Dict, List
 from purchase_order_microservice.infra.database.mongo.settings.connection import MongoConnectionHandler
 from purchase_order_microservice.data.interfaces.order_repository_interface import OrderRepositoryInterface
 from purchase_order_microservice.domain.models.order import Order

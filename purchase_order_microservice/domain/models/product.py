@@ -1,5 +1,5 @@
 from pydantic.dataclasses import dataclass
-from pydantic import Field, RootModel
+from pydantic import Field
 
 from datetime import datetime
 
